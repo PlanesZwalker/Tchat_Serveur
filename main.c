@@ -262,7 +262,7 @@ LRESULT CALLBACK WinProc(HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam)
 			}
 		}
 		break;
-                /* ferme les instances en cours  d execution avant de quitter le programme */
+                /* ferme les instances en cours d execution avant de quitter le programme */
 		case WM_DESTROY:
 		{
 			PostQuitMessage(0);
@@ -274,7 +274,7 @@ LRESULT CALLBACK WinProc(HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam)
 		break;
 
 		case WM_SOCKET:
-		{       /* evenementts lis aux sockets */
+		{       /* evenements lies aux sockets */
 			switch(WSAGETSELECTEVENT(lParam))
 			{       /* affiche le message recu */
 				case FD_READ:
